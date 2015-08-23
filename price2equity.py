@@ -4,11 +4,11 @@ import time
 from datetime import datetime 
 
 
-path = "/Users/Nikolas/Documents/Programming/Projects/2 Much learn/ana/Data/intraQuarter/_KeyStats"
+path = './Data/intraQuarter/'
 
 def Key_Stats(gather = "Total Debt/Equity (mrq)"):
-	statspath = path
-	stock_list = [x[0] for x in os.walk(path)]
+	statspath = path + '_KeyStats'
+	stock_list = [x[0] for x in os.walk(statspath)]
 	print(stock_list)
 
 Key_Stats()
